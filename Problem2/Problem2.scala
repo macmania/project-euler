@@ -10,19 +10,22 @@ object Problem2 {
 	var list = List(); 
 	def main(args: Array[String]){
 		//avg = 0; 
-
-		println(fibonacci(10));
+		var sum, x = 0
+		sum = 0
+		for(a <- 1 to 40000000){
+			x = fibonacci(a)
+			if(x % 2 == 0)
+		  		sum += fibonacci(a);
+		 }
+		 println(sum)
 	}
 	//still need to improve this algorithm's run time
 	def fibonacci(i: Integer): Integer={
-		println(i);	
-		if(i == 1 || i == 0) return i; 
+		//print(i + ", ");	
+		if(i == 1 || i == 0 || i == 2) return i; 
 		else{ 
-			
-			return fibonacci(i - 1) + fibonacci(i - 2);
+			return fibonacci(i - 1) + fibonacci(i - 2); 
 		}
-
-		
 
 	}
 }
