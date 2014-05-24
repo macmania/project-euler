@@ -19,6 +19,7 @@ object Problem2 {
 		 }
 		 println(sum)
 	}
+	  
 	//still need to improve this algorithm's run time
 	def fibonacci(i: Integer): Integer={
 		//print(i + ", ");	
